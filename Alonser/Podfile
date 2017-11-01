@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+
+target 'Alonser' do
+
+use_frameworks!
+
+pod 'ObjectMapper'
+pod 'Moya'
+pod 'RxCocoa'
+pod 'RxDataSources'
+pod "SDWebImage"
+pod "IQKeyboardManagerSwift"
+pod 'WechatOpenSDK'
+
+end
