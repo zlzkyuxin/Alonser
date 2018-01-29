@@ -1,4 +1,4 @@
-//
+ //
 //  AppDelegate.swift
 //  Alonser
 //
@@ -7,6 +7,21 @@
 //
 
 import UIKit
+import XCGLogger
+import IQKeyboardManagerSwift
+
+
+/// 输出日志
+let ALlogger: XCGLogger = {
+    let log = XCGLogger.default
+    log.setup(level: .verbose, showLogIdentifier: false, showFunctionName: true, showThreadName: true, showLevel: true, showFileNames: true, showLineNumbers: true, showDate: false, writeToFile: nil, fileLevel: .debug)
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy/mm/dd hh:mma"
+    dateFormatter.locale = Locale.current
+    log.dateFormatter = dateFormatter
+    
+    return log
+}()
 
 @UIApplicationMain
 class ALAppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +32,11 @@ class ALAppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.rootViewController = ALLoginViewController()
+        let nextVC = ALBaseViewController()
+        nextVC.finshClosure = { [weak self] in
+            self?.window?.rootViewController = ALLoginViewController()
+        }
+        window?.rootViewController = nextVC
         window?.makeKeyAndVisible()
         
         return true
@@ -46,5 +65,7 @@ class ALAppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+
 }
+
 

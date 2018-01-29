@@ -1,25 +1,33 @@
 PODS:
-  - Alamofire (4.5.1)
-  - Differentiator (3.0.1)
-  - IQKeyboardManagerSwift (5.0.4)
-  - Moya (10.0.0):
-    - Moya/Core (= 10.0.0)
-  - Moya/Core (10.0.0):
+  - Alamofire (4.6.0)
+  - Differentiator (3.0.2)
+  - IQKeyboardManagerSwift (5.0.7)
+  - Moya (10.0.1):
+    - Moya/Core (= 10.0.1)
+  - Moya/Core (10.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - ObjectMapper (3.0.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (3.1.0)
   - Result (3.2.4)
-  - RxCocoa (4.0.0):
+  - RxCocoa (4.1.1):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.1):
+  - RxDataSources (3.0.2):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
-  - SDWebImage (4.2.0):
-    - SDWebImage/Core (= 4.2.0)
-  - SDWebImage/Core (4.2.0)
-  - WechatOpenSDK (1.8.0)
+  - RxSwift (4.1.1)
+  - SDWebImage (4.2.3):
+    - SDWebImage/Core (= 4.2.3)
+  - SDWebImage/Core (4.2.3)
+  - SnapKit (4.0.0)
+  - WechatOpenSDK (1.8.1)
+  - XCGLogger (6.0.2):
+    - XCGLogger/Core (= 6.0.2)
+  - XCGLogger/Core (6.0.2):
+    - ObjcExceptionBridging
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
@@ -28,21 +36,26 @@ DEPENDENCIES:
   - RxCocoa
   - RxDataSources
   - SDWebImage
+  - SnapKit
   - WechatOpenSDK
+  - XCGLogger
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
-  IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
-  Moya: adb58b0f4e58430db43cc6e2f6ebab1836501186
-  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxDataSources: 098b7e62b6316313b14d6bf594e3f4f4f62a238a
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
-  SDWebImage: b1189fd85365c18434270a11a5cad13a1e848d53
-  WechatOpenSDK: 0ee07a8d492299d3e47372a33da5af26524a7576
+  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  WechatOpenSDK: 491d965d79335070328571d3e79f714549e79a5e
+  XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
 
-PODFILE CHECKSUM: 326ddc263126e31b907867a3a32b927fefbcd84e
+PODFILE CHECKSUM: 495e9fb7d8ac47596ffd3b5e09e0af373f16f810
 
 COCOAPODS: 1.4.0.beta.2

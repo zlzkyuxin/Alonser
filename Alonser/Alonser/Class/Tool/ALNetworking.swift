@@ -45,12 +45,12 @@ extension ALNetworkShared: TargetType {
 
     /// The target's base `URL`.
     var baseURL: URL {
-        return URL.init(string: "")!
+        return URL.init(string: ALBaseUrl)!
     }
 
     /// The path to be appended to `baseURL` to form the full `URL`.
     var path: String {
-        return ""
+        return ALBasePath
     }
 
     /// The HTTP method used in the request.

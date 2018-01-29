@@ -30,6 +30,7 @@
 		128D4F341FA94B6F006C616B /* ALMBPHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128D4F331FA94B6F006C616B /* ALMBPHud.swift */; };
 		128D4F361FA95635006C616B /* ALBaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128D4F351FA95635006C616B /* ALBaseTabBarViewController.swift */; };
 		128D4F391FA9569A006C616B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128D4F381FA9569A006C616B /* Reachability.swift */; };
+		128D4F3B1FA96BF6006C616B /* ALCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128D4F3A1FA96BF6006C616B /* ALCommon.swift */; };
 		12B3D3831FA8240400843699 /* ALAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3821FA8240400843699 /* ALAppDelegate.swift */; };
 		12B3D38A1FA8240400843699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B3D3891FA8240400843699 /* Assets.xcassets */; };
 		12B3D38D1FA8240400843699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B3D38B1FA8240400843699 /* LaunchScreen.storyboard */; };
@@ -85,6 +86,7 @@
 		128D4F331FA94B6F006C616B /* ALMBPHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALMBPHud.swift; sourceTree = "<group>"; };
 		128D4F351FA95635006C616B /* ALBaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALBaseTabBarViewController.swift; sourceTree = "<group>"; };
 		128D4F381FA9569A006C616B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		128D4F3A1FA96BF6006C616B /* ALCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALCommon.swift; sourceTree = "<group>"; };
 		12926E8471FC5E3028C8980B /* Pods-Alonser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alonser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alonser/Pods-Alonser.debug.xcconfig"; sourceTree = "<group>"; };
 		12B3D37F1FA8240400843699 /* Alonser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alonser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B3D3821FA8240400843699 /* ALAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALAppDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				12B3D3D91FA8335300843699 /* ALNetworking.swift */,
 				12B3D3DB1FA835C700843699 /* ALUserIphoneInfo.swift */,
 				128D4F331FA94B6F006C616B /* ALMBPHud.swift */,
+				128D4F3A1FA96BF6006C616B /* ALCommon.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -429,12 +432,15 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -442,12 +448,15 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -501,6 +510,7 @@
 				12B3D3CD1FA828F200843699 /* RxMoyaAvailability.swift in Sources */,
 				124E85B01FA8635400C4021F /* UIScreen+CZAddition.m in Sources */,
 				124E85871FA8603300C4021F /* UIBundle+Extensions.swift in Sources */,
+				128D4F3B1FA96BF6006C616B /* ALCommon.swift in Sources */,
 				124E85AF1FA8635400C4021F /* UILabel+CZAddition.m in Sources */,
 				124E85AE1FA8635400C4021F /* UIColor+CZAddition.m in Sources */,
 				12B3D3D81FA82B2E00843699 /* ALHomeViewController.swift in Sources */,
@@ -645,6 +655,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ELQL529Z4C;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/WechatOpenSDK\"",
+				);
 				INFOPLIST_FILE = Alonser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -665,6 +680,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ELQL529Z4C;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"/**",
+					"\"${PODS_ROOT}/Headers/Public/WechatOpenSDK\"",
+				);
 				INFOPLIST_FILE = Alonser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

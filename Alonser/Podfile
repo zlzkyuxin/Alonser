@@ -8,8 +8,12 @@ pod 'ObjectMapper'
 pod 'Moya'
 pod 'RxCocoa'
 pod 'RxDataSources'
+
+pod 'SnapKit'#约束#
 pod "SDWebImage"
 pod "IQKeyboardManagerSwift"
 pod 'WechatOpenSDK'
+
+pod 'XCGLogger'
 
 end
