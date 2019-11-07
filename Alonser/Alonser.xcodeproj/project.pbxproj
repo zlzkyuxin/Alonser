@@ -34,10 +34,6 @@
 		12B3D3831FA8240400843699 /* ALAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3821FA8240400843699 /* ALAppDelegate.swift */; };
 		12B3D38A1FA8240400843699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B3D3891FA8240400843699 /* Assets.xcassets */; };
 		12B3D38D1FA8240400843699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B3D38B1FA8240400843699 /* LaunchScreen.storyboard */; };
-		12B3D3CB1FA828F200843699 /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3C11FA828F200843699 /* MoyaProvider+Rx.swift */; };
-		12B3D3CC1FA828F200843699 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3C21FA828F200843699 /* Observable+Response.swift */; };
-		12B3D3CD1FA828F200843699 /* RxMoyaAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3C31FA828F200843699 /* RxMoyaAvailability.swift */; };
-		12B3D3CE1FA828F200843699 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3C41FA828F200843699 /* Single+Response.swift */; };
 		12B3D3D01FA82AAF00843699 /* ALBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3CF1FA82AAF00843699 /* ALBaseViewController.swift */; };
 		12B3D3D21FA82ABD00843699 /* ALLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3D11FA82ABD00843699 /* ALLoginViewController.swift */; };
 		12B3D3D61FA82B0900843699 /* ALBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B3D3D51FA82B0900843699 /* ALBaseNavigationViewController.swift */; };
@@ -93,10 +89,6 @@
 		12B3D3891FA8240400843699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B3D38C1FA8240400843699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B3D38E1FA8240400843699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12B3D3C11FA828F200843699 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
-		12B3D3C21FA828F200843699 /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
-		12B3D3C31FA828F200843699 /* RxMoyaAvailability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxMoyaAvailability.swift; sourceTree = "<group>"; };
-		12B3D3C41FA828F200843699 /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
 		12B3D3CF1FA82AAF00843699 /* ALBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALBaseViewController.swift; sourceTree = "<group>"; };
 		12B3D3D11FA82ABD00843699 /* ALLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALLoginViewController.swift; sourceTree = "<group>"; };
 		12B3D3D51FA82B0900843699 /* ALBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALBaseNavigationViewController.swift; sourceTree = "<group>"; };
@@ -228,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				128D4F371FA9566E006C616B /* Categorys */,
-				12B3D3C01FA828F200843699 /* RxMoya */,
 				124E858D1FA8635400C4021F /* Additions */,
 				12B3D3DD1FA8365000843699 /* Extensions */,
 				12B3D3D91FA8335300843699 /* ALNetworking.swift */,
@@ -237,17 +228,6 @@
 				128D4F3A1FA96BF6006C616B /* ALCommon.swift */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		12B3D3C01FA828F200843699 /* RxMoya */ = {
-			isa = PBXGroup;
-			children = (
-				12B3D3C11FA828F200843699 /* MoyaProvider+Rx.swift */,
-				12B3D3C21FA828F200843699 /* Observable+Response.swift */,
-				12B3D3C31FA828F200843699 /* RxMoyaAvailability.swift */,
-				12B3D3C41FA828F200843699 /* Single+Response.swift */,
-			);
-			path = RxMoya;
 			sourceTree = "<group>";
 		};
 		12B3D3C51FA828F200843699 /* VIew(视图及控制器) */ = {
@@ -346,7 +326,6 @@
 				12B3D37C1FA8240400843699 /* Frameworks */,
 				12B3D37D1FA8240400843699 /* Resources */,
 				8B98A10FF4D35A25FF91E0BE /* [CP] Embed Pods Frameworks */,
-				6564DC43576B6BD24F629C52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,28 +385,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6564DC43576B6BD24F629C52 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alonser/Pods-Alonser-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8B98A10FF4D35A25FF91E0BE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Alonser/Pods-Alonser-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Alonser/Pods-Alonser-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -437,6 +401,7 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -453,6 +418,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -460,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alonser/Pods-Alonser-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alonser/Pods-Alonser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA5E534B72B1679CAD6A8FFC /* [CP] Check Pods Manifest.lock */ = {
@@ -488,7 +454,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12B3D3CE1FA828F200843699 /* Single+Response.swift in Sources */,
 				124E85861FA8603300C4021F /* UIBarButtonItem+Extensions.swift in Sources */,
 				128D4F341FA94B6F006C616B /* ALMBPHud.swift in Sources */,
 				124E85A81FA8635400C4021F /* NSAttributedString+CZAdditon.m in Sources */,
@@ -502,12 +467,10 @@
 				124E85AD1FA8635400C4021F /* UIButton+CZAddition.m in Sources */,
 				124E85B11FA8635400C4021F /* UIView+CZAddition.m in Sources */,
 				124E85AA1FA8635400C4021F /* NSString+CZBase64.m in Sources */,
-				12B3D3CB1FA828F200843699 /* MoyaProvider+Rx.swift in Sources */,
 				124E85851FA8603300C4021F /* String+Extensions.swift in Sources */,
 				124E85AC1FA8635400C4021F /* NSString+CZPath.m in Sources */,
 				12B3D3831FA8240400843699 /* ALAppDelegate.swift in Sources */,
 				12B3D3D61FA82B0900843699 /* ALBaseNavigationViewController.swift in Sources */,
-				12B3D3CD1FA828F200843699 /* RxMoyaAvailability.swift in Sources */,
 				124E85B01FA8635400C4021F /* UIScreen+CZAddition.m in Sources */,
 				124E85871FA8603300C4021F /* UIBundle+Extensions.swift in Sources */,
 				128D4F3B1FA96BF6006C616B /* ALCommon.swift in Sources */,
@@ -522,7 +485,6 @@
 				124E85841FA8603300C4021F /* md5String.swift in Sources */,
 				124E85821FA8603300C4021F /* UIImage+Extensions.swift in Sources */,
 				12B3D3DA1FA8335300843699 /* ALNetworking.swift in Sources */,
-				12B3D3CC1FA828F200843699 /* Observable+Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
